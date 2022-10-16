@@ -1,0 +1,11 @@
+div {
+    color: #fff;
+    font-family: Tahoma, Verdana, Segoe, sans-serif;
+}
+.container {
+    display:flex;
+}
+
+.slider {
+    flex-grow: 1;
+}

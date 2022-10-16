@@ -1,0 +1,141 @@
+#imageshow
+{
+  position: absolute;
+  top:8px;
+  left:355px;
+  z-index: 1;
+  background: #FFFFFF;
+  width: 500px;    
+  height: 993px;  
+  margin: 0 auto 100px;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  overflow: hidden;
+}
+
+.slideshow{
+  width: 500%;
+  height: 500px;
+  display: flex;
+}
+
+.slideshow input{
+  display: none;
+}
+
+.image{
+  width: 20%;
+  transition: 2s;
+}
+
+.image img{
+  width: 500px;
+  height: 700px;
+  position: relative;
+  bottom: -10px;
+}
+
+/*css for manual slide navigation*/
+
+.manualbuttons{
+  position: absolute;
+  width: 800px;
+  margin-top: -40px;
+  display: flex;
+  justify-content: center;
+}
+
+.btnman{
+  border: 6px solid #abd16f;
+  padding: 5px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: 1s;
+  position: relative;
+  bottom: -300px;
+  left: -150px;
+}
+
+.btnman:not(:last-child){
+  margin-right: 40px;
+}
+
+.btnman:hover{
+  background: #abd16f;
+}
+
+#radio1:checked ~ .first{
+  margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+  margin-left: -20%;
+}
+
+#radio3:checked ~ .first{
+  margin-left: -40%;
+}
+
+#radio4:checked ~ .first{
+  margin-left: -60%;
+}
+
+/*css for automatic navigation*/
+
+.autobutton{
+  position: absolute;
+  display: flex;
+  width: 800px;
+  justify-content: center;
+  margin-top: 460px;
+  position: relative;
+  bottom: -300px;
+  left: -150px;
+}
+
+.autobutton div{
+  border: 6px solid #abd16f;
+  padding: 5px;
+  border-radius: 10px;
+  transition: 1s;
+}
+
+.autobutton div:not(:last-child){
+  margin-right: 40px;
+}
+
+#radio1:checked ~ .autobutton .button1{
+  background: #abd16f;
+}
+
+#radio2:checked ~ .autobutton .button2{
+  background: #abd16f;
+}
+
+#radio3:checked ~ .autobutton .button3{
+  background: #abd16f;
+}
+
+#radio4:checked ~ .autobutton .button4{
+  background: #abd16f;
+}
+
+#cooltext{
+  font-size: 32px;
+  font-weight: bold;
+  text-align: center;
+  color: #000000;
+  font-family: Arial, Helvetica, sans-serif;
+  animation: MoveUpDown 3s  infinite,step-end ;
+}
+
+
+@keyframes MoveUpDown {
+  0% {
+    transform: translateY(0);
+    display: none;
+  }
+  100%  {
+    transform: translateY(-600px);
+    display: block;
+  }
+}

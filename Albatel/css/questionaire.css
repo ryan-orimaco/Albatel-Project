@@ -1,0 +1,587 @@
+@import url('https://fonts.googleapis.com/css2?family=Itim&family=Open+Sans&family=Prompt&display=swap');
+
+body{
+    background-color: #328f8a;
+    background-image: linear-gradient(45deg,#ffffff,#08ac4b);
+    font-family: 'Open Sans', sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  form
+  {
+    position: relative;
+    top:0px;
+    z-index: 1;
+    background: #FFFFFF;
+    width: 500px;
+    left: 200px;
+    margin: 0 auto 100px;
+    padding: 45px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+  }
+  
+  input[id = "Red"]:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+  
+  }
+  
+  input[id = "Red"]:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: red;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  input[id = "Amber"]:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  input[id = "Amber"]:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color:orange;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  input[id = "Green"]:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color: #d1d3d1;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  input[id = "Green"]:checked:after {
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    top: -2px;
+    left: -1px;
+    position: relative;
+    background-color:green;
+    content: '';
+    display: inline-block;
+    visibility: visible;
+    border: 2px solid white;
+    font-family: 'Open Sans', sans-serif;
+  }
+  
+  .transition
+  {
+     display:block;
+      background:none;
+      text-align:center;
+      width:200px;
+      border:2px solid #0ae2f3;
+      margin:20px auto;
+      padding:14px 10px;
+      outline:none;
+      border-radius:24px;
+      transition:0.25s;
+      font-family: 'Open Sans', sans-serif;
+      font-size: small;
+      font-weight: bolder;
+  }
+  
+  .transition:hover
+  {
+    width:280px;
+      border-color:#fe9d07;
+  }
+  
+  #q1
+  {
+    display:block;
+      background:none;
+      text-align:center;
+      width:400px;
+      border:2px solid #0ae2f3;
+      margin:20px auto;
+      padding:14px 10px;
+      outline:none;
+      border-radius:24px;
+      transition:0.25s;
+  }
+
+  #q2
+  {
+    display:block;
+      background:none;
+      text-align:center;
+      width:400px;
+      border:2px solid #0ae2f3;
+      margin:20px auto;
+      padding:14px 10px;
+      outline:none;
+      border-radius:24px;
+      transition:0.25s;
+  }
+  
+  #q3
+  {
+    display:block;
+      background:none;
+      text-align:center;
+      width:400px;
+      border:2px solid #0ae2f3;
+      margin:20px auto;
+      padding:14px 10px;
+      outline:none;
+      border-radius:24px;
+      transition:0.25s;
+  }
+  
+    #q4
+  {
+    display:block;
+      background:none;
+      text-align:center;
+      width:400px;
+      border:2px solid #0ae2f3;
+      margin:20px auto;
+      padding:14px 10px;
+      outline:none;
+      border-radius:24px;
+      transition:0.25s;
+  }
+  
+  #q5
+  {
+    display:block;
+      background:none;
+      text-align:center;
+      width:400px;
+      border:2px solid #0ae2f3;
+      margin:20px auto;
+      padding:14px 10px;
+      outline:none;
+      border-radius:24px;
+      transition:0.25s;
+  }
+
+  #q6
+  {
+    display:block;
+      background:none;
+      text-align:center;
+      width:400px;
+      border:2px solid #0ae2f3;
+      margin:20px auto;
+      padding:14px 10px;
+      outline:none;
+      border-radius:24px;
+      transition:0.25s;
+  }
+  /*Lets make each section disappear and when clicked to the next section popit up*/
+  #section2
+  {
+    display: none;
+    transition: 00.25s;
+  }
+  
+  #section3
+  {
+    display: none;
+    transition: 00.25s;
+  }
+
+  #section4
+  {
+    display: none;
+    transition: 00.25s;
+  }
+
+  #section5
+  {
+    display: none;
+    transition: 00.25s;
+  }
+
+  #section6
+  {
+    display: none;
+    transition: 00.25s;
+  }
+
+  #section7
+  {
+    display: none;
+    transition: 00.25s;
+  }
+
+  #section8
+  {
+    display: none;
+    transition: 00.25s;
+  }
+
+  #section9
+  {
+    display: none;
+    transition: 00.25s;
+  }
+  #section10
+  {
+    display: none;
+    transition: 00.25s;
+  }
+
+  #section11
+  {
+    display: none;
+    transition: 00.25s;
+  }
+
+  #section12
+  {
+    display: none;
+    transition: 00.25s;
+  }
+  #section13
+  {
+    display: none;
+    transition: 00.25s;
+  }
+
+#resultsform
+  {
+    display:none;
+    transition: 00.25s;
+  }
+
+  /**Lets now create the buttons for the questionaire**/
+  #next
+  {
+    background-color: rgb(1, 81, 253);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+  }
+
+  #next:hover
+  {
+    background-color: rgb(43, 253, 1);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+  }
+
+  #previous
+  {
+    background-color:rgb(253, 173, 1);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+  }
+
+  #previous:hover
+  {
+    background-color: rgb(1, 253, 1);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    margin: 4px 2px;
+    cursor: pointer;
+    border-radius: 16px;
+  }
+
+  #download-pdf
+  {
+    background-color: rgb(1, 253, 1);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 16px;
+    display: none;
+    
+  }
+
+  #getresults
+  {
+    background-color: rgb(1, 253, 1);
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    cursor: pointer;
+    border-radius: 16px;
+  
+  }
+
+
+  h3{
+  font-family: 'Open Sans', sans-serif;
+  font-size: large;
+}
+
+h1
+{
+  font-family: 'Open Sans', sans-serif;
+  font-size: 30px;
+}
+
+/*Lets create a tooltip to ask what this means**/
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+header .header{
+  background-color: #fff;
+  height: 45px;
+}
+header a img{
+  width: 134px;
+margin-top: 4px;
+}
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.login-page .form .login{
+  margin-top: -31px;
+margin-bottom: 26px;
+}
+.form {
+  position: relative;
+  top:-70px;
+  z-index: 1;
+  background: #FFFFFF;
+  width: 550px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15 0px;
+  padding: 12px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background-color: #328f8a;
+  background-image: linear-gradient(45deg,#328f8a,#08ac4b);
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #80ff80;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+
+body {
+  background-color: #328f8a;
+  background-image: linear-gradient(45deg,#328f8a,#08ac4b);
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+input[type="text"],input[type="Your Company Name"]
+{
+	display:block;
+	background:none;
+	text-align:center;
+	width:200px;
+	border:2px solid #0ae2f3;
+	margin:20px auto;
+	padding:14px 10px;
+	outline:none;
+	border-radius:24px;
+	transition:0.25s;
+}
+
+input[type="text"]:focus, input[type="Your Company Name"]:focus
+{
+	width:280px;
+	border-color:#fe9d07;
+}
+
+#section1
+{
+  display: none;
+  transition: 00.25s;
+}
+
+/*Creates Notes for the meanings of each color*/
+#circlered
+{
+    width: 25px;
+    height: 25px;
+    background: red;
+    border-radius: 45px;
+    position: relative;
+    top: -30px;
+    right: -35px;
+}
+
+#statement1{
+  font-size: 14px;
+  position: relative;
+  top: 6px;
+  right: -40px;
+}
+
+#circleamber
+{
+    width: 25px;
+    height: 25px;
+    background: orange;
+    border-radius: 50px;
+    position: relative;
+    top: -44px;
+    right: -33px;
+}
+
+#statement2
+{
+  font-size: 14px;
+  position: relative;
+  top: 6px;
+  right: -45px;
+}
+
+
+#circlegreen
+{
+    width: 25px;
+    height: 25px;
+    background: green;
+    border-radius: 50px;
+    position: relative;
+    top: -60px;
+    right: -32px;
+}
+
+#statement3{
+  font-size: 14px;
+  position: relative;
+  top: -9px;
+  right: 0px;
+}
+
+.tool 
+{
+    position: relative;
+    height: 20px;
+    width: 20px;
+    background-color: rgb(0, 255, 85);
+    border-radius: 50px;
+    display: inline-block;
+
+}
+
+.tool .hi {
+  visibility: hidden;
+  width: 600px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+}
+
+.tool:hover .hi {
+  visibility: visible;
+}
